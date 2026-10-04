@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spotify </h1>
+    <h3>URL: https://open.spotify.com </h3> 
+    <p>This is Spotify’s public-facing web player where users browse playlists, albums, and recommendations.</p>
+    <h4>Object Location</h4>
+    <p>The object is a playlist card on the Spotify Home page.
+        A user locates it by:</p>
+        <ul>
+            <li>Opening Spotify Web Player</li>
+            <li>Landing on the Home tab (default)</li>
+            <li>Scrolling through sections like Made For You, Your Top Mixes, Daily Recommendations, etc.</li>
+            <li>Each playlist appears as a rectangular card with:
+                <ul>
+                    <li>Cover art</li>
+                    <li>Playlist title</li>
+                    <li>Creator name</li>
+                    <li>The playlist card is visually grouped in horizontal rows, making it easy to scan.</li>
+                   
+                </ul>
+            </li>
+        </ul>
+
+        <h4>TRIGGERS</h4>
+    <p>The microinteraction begins when the user hovers their cursor over a playlist card. This hover event is the trigger.
+</p>
+         <h4>RULES (Existing Microinteraction)</h4>
+         <ol>
+            <li>Reveal Play Button  
+When the cursor enters the playlist card area, Spotify checks if the card is hover‑active.
+If true → it displays a floating Play button in the bottom-right corner of the card.</li>
+
+            <li>Card Elevation / Highlight  
+The playlist card slightly enlarges or brightens to indicate it is interactive.
+This rule helps users understand the card is clickable.</li>
+         </ol>
+
+         <h4>FEEDBACK</h4>
+         <p>What the user sees when hovering:</p>
+         <ul>
+            <li>A green circular Play button fades in</li>
+            <li>The playlist card increases contrast or brightness</li>
+            <li>The cover art appears slightly lifted</li>
+            <li>The cursor changes to a pointer</li>
+            <li>The card feels “active” and ready to be clicked</li>
+            <li>There is no sound or haptic feedback because this is a web interaction.</li>
+            
+            
+         </ul>
+
+         <h4>LOOPS</h4>
+         <p>What the user sees when hovering:</p>
+         <ul>
+            <li>Every time the user hovers over a playlist card, the Play button appears.</li>
+            <li>When the cursor leaves, the Play button disappears.</li>
+            <li>A grey background appears</li>
+         </ul>
+
+
+         <h4>MODES</h4>
+         <p>What the user sees when hovering:</p>
+         <ul>
+            <li>Logged-in mode: Hovering shows the Play button and allows playback.</li>
+            <li>Logged-out mode: Hovering still shows the visual hover effect, but clicking redirects the user to the login page instead of playing music.
+</li>
+            <li>Mobile mode: There is no hover interaction because mobile devices rely on tap events. The Play button is always visible or appears on tap.
+</li>
+         </ul>
+<img src="./spotify_home.png" style="width:500px;" alt="">
+<img src="./spotify_on_click.png" width="500px">
+
+</body>
+</html>
