@@ -32,26 +32,23 @@
 </p>
          <h4>RULES (Existing Microinteraction)</h4>
          <ol>
-            <li>Reveal Play Button- 
+            <li>Reveal play button- 
 When the cursor enters the playlist card area, Spotify checks if the card is hover‑active.
-If true → it displays a floating Play button in the bottom-right corner of the card.</li>
+If true, it displays a floating Play button in the bottom-right corner of the card.</li>
 
-            <li>Card Elevation / Highlight  -
-The playlist card slightly enlarges or brightens to indicate it is interactive.
-This rule helps users understand the card is clickable.</li>
+            <li>Card highlight-
+The playlist card slightly brightens toshow that the card is clickable.</li>
          </ol>
 
          <h4>FEEDBACK</h4>
          <p>What the user sees when hovering:</p>
          <ul>
             <li>A green circular Play button fades in</li>
-            <li>The playlist card increases contrast or brightness</li>
-            <li>The cover art appears slightly lifted</li>
+            <li>The playlist card background increases brightness</li>
             <li>The cursor changes to a pointer</li>
             <li>The card feels “active” and ready to be clicked</li>
-            <li>There is no sound or haptic feedback because this is a web interaction.</li>
-            
-            
+            <li>There is no sound feedback because this is a web interaction.</li>
+
          </ul>
 
          <h4>LOOPS</h4>
@@ -59,14 +56,14 @@ This rule helps users understand the card is clickable.</li>
          <ul>
             <li>Every time the user hovers over a playlist card, the Play button appears.</li>
             <li>When the cursor leaves, the Play button disappears.</li>
-            <li>A grey background appears</li>
+            <li>the background brigthens</li>
          </ul>
 
 
          <h4>MODES</h4>
          <p>What the user sees when hovering:</p>
          <ul>
-            <li>Logged-in mode: Hovering shows the Play button and allows playback.</li>
+            <li>Logged-in mode: Hovering shows the play button and allows playback.</li>
             <li>Logged-out mode: Hovering still shows the visual hover effect, but clicking redirects the user to the login page instead of playing music.
 </li>
             <li>Mobile mode: There is no hover interaction because mobile devices rely on tap events. The Play button is always visible or appears on tap.
