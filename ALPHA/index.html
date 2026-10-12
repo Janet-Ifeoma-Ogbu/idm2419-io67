@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- <section>
     <h1 style="color: green; font-size: 45px;">Spotify </h1>
     <h3>URL:<a href="https://open.spotify.com">https://open.spotify.com</a> </h3> 
     <p>This is Spotify’s public-facing web player where users browse playlists, albums, and recommendations.</p>
-    <h4>Object Location</h4>
+    <h4>Add to Liked Songs (Plus/Check) Button</h4>
     <p>The object is a playlist card on the Spotify Home page.
         A user locates it by: </p>
         <ul>
@@ -75,6 +77,110 @@ The playlist card background slightly brightens to show that the card is clickab
 <img src="../spotifyhome.png" style="width:500px;" alt="">
          <p>Hover on</p>
 <img src="../spotify_on_click.png" width="500px">
+</section> -->
 
+<section>
+    <h1 style="color: green; font-size: 45px;">Spotify</h1>
+<h3>URL: <a href="https://open.spotify.com">https://open.spotify.com</a></h3>
+
+<h4>Save Playlist to Your Library (Plus/Check) Button</h4>
+<p>Located on playlist headers/action bars (next to the main Play button) while viewing a playlist.</p>
+
+
+<h4>TRIGGERS</h4>
+<ul>
+    <li>Hover On</li>
+    <li>Hover Off</li>
+    <li>Click On</li>
+    <li>Click Off</li>
+</ul>
+
+<h4>RULES</h4>
+<h5>Hover On (Unsaved State)</h5>
+<ol>
+    <li>Cursor changes to a hand icon.</li>
+    <li>Text saying "Save to Your Library" appears near the button.</li>
+    <li>Plus icon changes from gray to white.</li>
+</ol>
+
+<h5>Hover Off (Unsaved State)</h5>
+<ol>
+    <li>Cursor changes back to a normal arrow.</li>
+    <li>Text disappears.</li>
+    <li>Plus icon turns back to gray.</li>
+</ol>
+
+<h5>Click On (Save to Library)</h5>
+<ol>
+    <li>Plus icon (+) turns into a green checkmark (✓).</li>
+    <li>A small burst of green and white stars pops out around the button.</li>
+    <li>Text changes to "Saved to Your Library".</li>
+    <li>The playlist is added to the user's library sidebar.</li>
+</ol>
+
+<h5>Hover On (Saved State)</h5>
+<ol>
+    <li>Cursor changes to a hand icon.</li>
+    <li>Text saying "Remove from Your Library" appears near the button.</li>
+    <li>Green checkmark icon stays green and brightens slightly.</li>
+</ol>
+
+<h5>Hover Off (Saved State)</h5>
+<ol>
+    <li>Cursor changes back to a normal arrow.</li>
+    <li>Text disappears.</li>
+    <li>Green checkmark icon stays green.</li>
+</ol>
+
+<h5>Click Off (Remove from Library)</h5>
+<ol>
+    <li>Green checkmark icon (✓) turns back into a gray plus icon (+).</li>
+    <li>Text changes to "Save to Your Library".</li>
+    <li>The playlist is removed from the user's library sidebar.</li>
+</ol>
+
+<h4>FEEDBACK</h4>
+<h5>Hover On</h5>
+<ol>
+    <li>Cursor becomes a hand pointer.</li>
+    <li>Small text box appears ("Save to Your Library" or "Remove from Your Library").</li>
+    <li>Icon lights up (gray to white or bright green).</li>
+</ol>
+
+<h5>Hover Off</h5>
+<ol>
+    <li>Cursor becomes a normal arrow.</li>
+    <li>Text box goes away.</li>
+    <li>Icon color goes back to normal.</li>
+</ol>
+
+<h5>Click On</h5>
+<ol>
+    <li>Icon changes from gray plus (+) to green checkmark (✓).</li>
+    <li>Checkmark pops and scales up briefly.</li>
+    <li>Green and white stars burst around the icon.</li>
+    <li>A message pops up at the bottom left: "Added to Your Library".</li>
+</ol>
+
+<h5>Click Off</h5>
+<ol>
+    <li>Icon changes from green checkmark (✓) back to gray plus (+).</li>
+    <li>A message pops up at the bottom left: "Removed from Your Library".</li>
+</ol>
+
+<h4>LOOPS/MODES</h4>
+<ul>
+    <li><strong>Binary Toggle Mode:</strong> Switches back and forth between Unsaved (Plus icon) and Saved (Green Checkmark icon).</li>
+</ul>
+
+<h4>VISUALIZATION</h4>
+<img src="../images/Screenshot 2026-10-12 144205.png"  width="320px"  alt="">
+<img src="../images/Screenshot 2026-10-12 152306.png"  width="320px"  alt="">
+<img src="../images/Screenshot 2026-10-12 152425.png" width="320px"   alt="">
+<img src="../images/remove.png" width="320px" alt="">
+<img src="../images/Screenshot 2026-10-12 152458.png" width="320px"   alt="">
+
+
+</section>
 </body>
 </html>
